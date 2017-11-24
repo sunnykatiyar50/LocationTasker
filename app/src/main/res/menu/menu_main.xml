@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sunnykatiyar.locationtasker.MainActivity">
+
+    <item
+        android:id="@+id/main_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/add_location"
+        android:title="Add Location"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/current_location"
+        android:orderInCategory="100"
+        android:title="Current location"
+        />
+
+    <item android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About"/>
+
+</menu>

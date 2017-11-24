@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin" >2sp</dimen>
+    <dimen name="medium_margin" >5sp</dimen>
+    <dimen name="large_margin" >10sp</dimen>
+    <dimen name="small_fontsize" >15dp</dimen>
+    <dimen name="medium_fontsize" >25dp</dimen>
+    <dimen name="large_fontsize" >35dp</dimen>
+    <dimen name="small_padding" >1dp</dimen>
+    <dimen name="medium_padding" >3dp</dimen>
+    <dimen name="large_padding" >5dp</dimen>
+</resources>

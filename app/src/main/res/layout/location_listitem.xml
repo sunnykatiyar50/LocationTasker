@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Task_Label"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/medium_margin"
+    android:background="#bbbbbb"
+    android:focusableInTouchMode="true"
+    android:addStatesFromChildren="false">
+
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:layout_margin="5dp"
+        android:text="Location Name"
+        android:textSize="@dimen/medium_fontsize" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/location_name"
+    android:id="@+id/distance_layout"
+    android:focusableInTouchMode="true"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:focusableInTouchMode="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Refresh for distance from current location"
+        android:textSize="@dimen/small_fontsize" />
+    <ImageButton
+        android:layout_margin="@dimen/small_margin"
+        android:layout_width="wrap_content"
+        android:id="@+id/refresh_btn"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:src="@drawable/ic_refresh_black_18dp"
+        android:layout_gravity="right"/>
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/label_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/default_tasklabel"
+        android:clickable="true"
+        android:inputType="text"
+        android:singleLine="false"
+        android:layout_below="@id/distance_layout"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/task_switch_txt"
+        android:focusableInTouchMode="true"
+        android:text="On/Off Reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_edittext"
+        android:layout_margin="10dp"
+        android:padding="5dp" />
+
+    <Switch
+        android:id="@+id/task_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:layout_below="@id/label_edittext"
+        android:layout_toRightOf="@id/task_switch_txt" />
+
+
+    <ImageButton
+        android:id="@+id/delete_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/task_switch"
+        android:layout_alignEnd="@+id/label_edittext"
+        android:layout_alignRight="@+id/label_edittext"
+        android:layout_margin="2dp"
+        app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+</RelativeLayout>

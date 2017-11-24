@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">LocationTasker</string>
+    <string name="ring_tab">Set Ring Mode</string>
+    <string name="reminder_tab">Remind Location</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location_name">Location Name</string>
+    <string name="title_activity_main">Location Reminder</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="default_tasklabel">Give a Label to your Task</string>
+
+</resources>
